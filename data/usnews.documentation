@@ -1,0 +1,121 @@
+
+NAME:  U.S. News College data   (fixed column format version)
+TYPE:  Census (mostly)
+SIZE:  1303 colleges, 35 variables
+
+
+DESCRIPTIVE ABSTRACT:
+Data are from the 1995 U.S. News report on American colleges and
+universities.  They include demographic information on tuition,
+room & board costs, SAT or ACT scores, application/acceptance
+rates, student/faculty ratio, graduation rate, and more.  The
+dataset is used for the 1995 Data Analysis Exposition, sponsored
+by the Statistical Graphics Section of the American Statsitical
+Association.  See the file jse/data/colleges.doc for more
+information on the Exposition.
+
+
+SOURCE:
+This dataset is taken from the 1995 U.S. News & World Report's
+Guide to America's Best Colleges.  This dataset is protected by
+copyright, is reproduced with permission of the copyright
+holder(s), and may not be downloaded or otherwise copied, except
+solely for the purpose of analysis in connection with the
+American Statistical Association's 1995 Data Analysis Exposition.
+The data are reporduced with the permission of the publisher.
+Thanks to Robert Morse, Director of Research for America's Best
+Colleges at U.S. News & World Report for assistance in supplying
+the data.
+
+
+NOTE: The archives should contain two versions of this dataset.
+
+USNEWS.DAT contains the data in a comma delimited format with a
+single row of data for each college.
+
+USNEWS3.DAT contains the data in a fixed column format with three
+data lines for each school and a maximum line length of 80
+characters.
+
+The format for USNEWS3.DAT is described below, although the same
+variables in the order given below are found on each row of
+USNEWS.DAT.
+
+VARIABLE DESCRIPTIONS (USNEWS3.DAT)
+Fixed column format with three data lines per school
+
+Line #1
+  1 -  5   FICE (Federal ID number)
+  7 - 51   College name
+ 53 - 54   State (postal code)
+
+Line #2
+  1 -  2   Public/private indicator (public=1, private=2)
+  3 -  6   Average Math SAT score
+  7 - 10   Average Verbal SAT score
+ 11 - 15   Average Combined SAT score
+ 16 - 18   Average ACT score
+ 19 - 22   First quartile - Math SAT
+ 23 - 26   Third quartile - Math SAT
+ 27 - 30   First quartile - Verbal SAT
+ 31 - 34   Third quartile - Verbal SAT
+ 35 - 37   First quartile - ACT
+ 38 - 40   Third quartile - ACT
+ 41 - 46   Number of applications received
+ 47 - 52   Number of applicants accepted
+ 53 - 57   Number of new students enrolled
+ 58 - 61   Pct. new students from top 10% of H.S. class
+ 62 - 65   Pct. new students from top 25% of H.S. class
+
+Line #3
+  1 -  6   Number of fulltime undergraduates
+  7 - 12   Number of parttime undergraduates
+ 13 - 18   In-state tuition
+ 19 - 24   Out-of-state tuition
+ 25 - 29   Room and board costs
+ 30 - 34   Room costs
+ 35 - 39   Board costs
+ 40 - 44   Additional fees
+ 45 - 49   Estimated book costs
+ 50 - 54   Estimated personal spending
+ 55 - 58   Pct. of faculty with Ph.D.'s
+ 59 - 62   Pct. of faculty with terminal degree
+ 63 - 67   Student/faculty ratio
+ 68 - 70   Pct.alumni who donate
+ 71 - 76   Instructional expenditure per student
+ 77 - 80   Graduation rate
+
+Missing values are denoted with *
+
+
+STORY BEHIND THE DATA:
+This dataset is used along with another (see jse/data/aaup.doc)
+as the basis for the 1995 Data Analysis Exposition.  This is a
+special session at the Joint Statistical Meetings in which uses a
+common dataset as a vehichle for demonstrating innovative
+approaches to analyzing and displaying data.  Much of the
+information appeared in the popular U.S. News & World Report
+special issue comparing colleges.
+
+
+PEDAGOGICAL NOTES:
+The purpose of the Data Analysis Exposition is to provide a
+common dataset for individuals and groups to use to demonstrate
+approaches to analyzing data and displaying statistical results.
+In keeping with the spirit of this Exposition, one might ask
+students prepare posters displaying the results of thier own
+analyses.  The dataset contains a wealth of information which is
+quite naturally of considerable interest to college students.
+For example, how does a particular school fair in the data?  Is
+your tuition in line with what the other characteristics of your
+school suggest it should be?
+
+
+
+SUBMITTED BY:
+Robin Lock
+Mathematics Department
+St. Lawrence University
+Canton, NY  13617
+rlock@vm.stlawu.edu
+

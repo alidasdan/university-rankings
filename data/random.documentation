@@ -1,0 +1,31 @@
+There are two random* files: random_arith.out and random_geo.out,
+where arith and geo suffixes are for arithmetic and geometric formulas
+used for score computation.
+
+The schema for random*.out files are as follows:
+
+University, State:Avr score:Std score:CV score:Avr rank:Std Rank:CV rank:Prob in top 20:Top group id:Max rank:Min rank:Max rank count:Min rank count:Product
+
+Example: The first line in random_arith.out is
+
+Harvard University, MA:0.7295:0.0804:0.1103:1.81:0.96:0.5285:1.00:1:16:1:1:4161:25.93
+
+The field separator ':' is more convenient than ',' due to the latter
+also occurring in the "university, state" name combination.  For
+example, you can use the following commands on a Linux-compatible
+computer:
+
+awk 'BEGIN{FS=":"}{ ... your program ... }'
+
+or
+
+sort -t ':' -n -k field1,filed2 ...
+
+If you don't want to work with this field separator, it is almost
+trivial to convert these files to CSV or TSV.
+
+For how to use this data, refer to the paper 'A. Dasdan et al., How
+Reliable are University Rankings?, Arxiv, 2020'.
+
+/EOD
+

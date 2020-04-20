@@ -1,0 +1,23 @@
+The schema for sorted*.dat files are as follows:
+
+Score:University, State:a_1:a_2:a_3:a_4:a_5:a_6:a_7:a_8:a_9:a_10:a_11
+
+Example: The first line in sorted.dat is
+
+0.7787:California Institute of Technology, CA:1.00:0.74:0.41:0.98:0.98:1.00:1.00:0.15:0.83:0.36:0.67
+
+The field separator ':' is more convenient than ',' due to the latter
+also occurring in the "university, state" name combination.  For
+example, you can use the following commands on a Linux-compatible
+computer:
+
+awk 'BEGIN{FS=":"}{ ... your program ... }'
+
+or
+
+sort -t ':' -n -k field1,filed2 ...
+
+If you don't want to work with this field separator, it is almost
+trivial to convert these files to CSV or TSV.
+
+/EOD
